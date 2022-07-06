@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: casestudy
+  datasource:
+    url: jdbc:mysql://localhost:3306/case_study
+    username: root
+    password: case-study
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+price:
+  limit: 200
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG

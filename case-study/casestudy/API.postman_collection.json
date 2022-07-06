@@ -1,0 +1,609 @@
+{
+	"info": {
+		"_postman_id": "0f68e4ea-cee4-4e32-8807-c83bb31cb229",
+		"name": "API",
+		"description": "Challange\n\nContact Support:\n Name: Emre DALCI\n Email: emredalc@gmail.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/bill",
+			"item": [
+				{
+					"name": "Insert Billing Info",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": {},\n  \"billNo\": {},\n  \"email\": {},\n  \"firstName\": {},\n  \"lastName\": {},\n  \"productName\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/bill",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"bill"
+							]
+						},
+						"description": "This method insert billing info and returns response which include operation is accepted or rejected"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": {},\n  \"billNo\": {},\n  \"email\": {},\n  \"firstName\": {},\n  \"lastName\": {},\n  \"productName\": {}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/bill",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": {},\n  \"billNo\": {},\n  \"email\": {},\n  \"firstName\": {},\n  \"lastName\": {},\n  \"productName\": {}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/bill",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": {},\n  \"billNo\": {},\n  \"email\": {},\n  \"firstName\": {},\n  \"lastName\": {},\n  \"productName\": {}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/bill",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": {},\n  \"billNo\": {},\n  \"email\": {},\n  \"firstName\": {},\n  \"lastName\": {},\n  \"productName\": {}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/bill",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": {},\n  \"billNo\": {},\n  \"email\": {},\n  \"firstName\": {},\n  \"lastName\": {},\n  \"productName\": {}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/bill",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Bills Which Accepted",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/bill/accepted/:email",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"bill",
+								"accepted",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "nostrud et aute",
+									"description": "(Required) email"
+								}
+							]
+						},
+						"description": "This method returns list of accepted bills"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bill/accepted/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill",
+										"accepted",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "nostrud et aute",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bill/accepted/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill",
+										"accepted",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "nostrud et aute",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bill/accepted/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill",
+										"accepted",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "nostrud et aute",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bill/accepted/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill",
+										"accepted",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "nostrud et aute",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Bills Which Not Accepted",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/bill/rejected/:email",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"bill",
+								"rejected",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "nostrud et aute",
+									"description": "(Required) email"
+								}
+							]
+						},
+						"description": "This method returns list of not accepted bills"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bill/rejected/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill",
+										"rejected",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "nostrud et aute",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bill/rejected/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill",
+										"rejected",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "nostrud et aute",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bill/rejected/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill",
+										"rejected",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "nostrud et aute",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bill/rejected/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bill",
+										"rejected",
+										":email"
+									],
+									"variable": [
+										{
+											"key": "email",
+											"value": "nostrud et aute",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "//localhost:8080",
+			"type": "string"
+		}
+	]
+}
